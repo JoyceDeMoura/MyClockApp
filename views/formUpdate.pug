@@ -1,0 +1,46 @@
+doctype html
+html(lang='en')
+	head
+		meta(charset='UTF-8')
+		title  Update User
+		//link(rel='stylesheet',href='styles.css')
+	body
+		h1 Update User
+		form(id='form-update',action=`../update-user/${user._id}` method='POST')
+			label(for='LastName') Last Name:
+			input(type='text' id='LastName' name='LastName' value=user.LastName)
+			br
+			label(for='FirstName') First Name:
+			input(type='text' id='FirstName' name='FirstName' value=user.FirstName)
+			br
+			label(for='DateOfBirth') Date Of Birth:
+			input(type='text' id='DateOfBirth' name='DateOfBirth' value=user.DateOfBirth)
+			br
+			label(for='Address1') Address1:
+			input(type='text' id='Address1' name='Address1' value=user.Address1)
+			br
+			label(for='Address2') Address 2:
+			input(type='text' id='Address2' name='Address2' value=user.Address2)
+			br
+			label(for='City') City:
+			input(type='text' id='City' name='City' value=user.City)
+			br
+			label(for='PostalCode') Postal Code:
+			input(type='text' id='PostalCode' name='PostalCode' value=user.PostalCode)
+			br
+			label(for='Country') Country:
+			input(type='text' id='Country' name='Country' value=user.Country)
+			br
+			label(for='Phone') Phone:
+			input(type='text' id='Phone' name='Phone' value=user.Phone)
+			br
+			label(for='Email') Email:
+			input(type='text' id='Email' name='Email' value=user.Email)
+			br
+			label(for='UserNotes') User Notes:
+			input(type='text' id='UserNotes' name='UserNotes' value=user.UserNotes)
+			br
+			button(type='submit') Update User
+		form(id='form-delete', action=`../delete-user/${user._id}` method='DELETE')
+			button(type='submit') Delete User
+		

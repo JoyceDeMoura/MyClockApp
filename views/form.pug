@@ -1,0 +1,42 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    title  User Form 
+  body
+    h1  User Form 
+    form(action='/create-user' method='POST')
+      label(for='LastName') Last Name: 
+      input#LastName(type='text' name='LastName' required='')
+      br
+      label(for='FirstName') First Name: 
+      input#FirstName(type='text' name='FirstName' required='')
+      br
+      label(for='DateOfBirth') Date of Birth: 
+      input#DateOfBirth(type='text' name='DateOfBirth' required='')
+      br
+      label(for='Address1') Address 1 : 
+      input#Address1(type='text' name='Address1' required='')
+      br
+      label(for='Address2') Address 2 : 
+      input#Address2(type='text' name='Address2' required='')
+      br
+      label(for='City') City : 
+      input#City(type='text' name='City' required='')
+      br
+      label(for='PostalCode') Postal Code: 
+      input#PostalCode(type='text' name='PostalCode' required='')
+      br
+      label(for='Country') Country : 
+      input#Country(type='text' name='Country' required='')
+      br
+      label(for='Phone') Phone: 
+      input#Phone(type='text' name='Phone' required='')
+      br
+      label(for='Email') Email: 
+      input#Email(type='text' name='Email' required='')
+      br
+      label(for='UserNotes') User Notes: 
+      input#UserNotes(type='text' name='UserNotes' required='')
+      br
+      input(type='submit' value='submit')

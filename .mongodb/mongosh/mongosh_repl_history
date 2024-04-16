@@ -1,0 +1,50 @@
+  }
+    _id: 0
+    Wage: 1,
+    User_id: 1,
+    Phone: 1,
+    LastName: 1,
+    JobTitle: 1,
+    FirstName: 1,
+    Email: 1,
+    Department: 1,
+    DateofBirth: 1,
+    Address: 1,
+  {
+  {},
+db.getCollection('HoursControl').find(
+db.getCollection('HoursControl').find({});
+db.UserCatalog.findOne();
+db.UserCatalog.findOne()
+UserCatalop.find();
+admin> db.UserCatalog.findOne();
+db.UserCatalog.findOne();
+db.UserCatalog.find();
+admin.UserCatalog.find();
+UserCatalog.find();
+UserCatalop.find();
+show collections
+show dbs
+use admin
+db.getUser("admin");
+use admin
+mongosh --port 27017 --authenticationDatabase "admin" -u "admin" -p
+db.getUser("admin");
+mongosh --port 27017 --authenticationDatabase "admin" -u "admin" -p;
+db.getUser("admin")
+db.createUser({ user: "admin", pwd: "myappmypass", roles: [ { role: "userAdminAnyDatabase", db: "admin" }, { role: "readWriteAnyDatabase", db: "admin" }, { role: "dbAdminAnyDatabase", db: "admin" }] });
+use admin;
+... ]
+... {role:"dbAdminAnyDatabase", db:"admin"}
+... {role:"readWriteAnyDatabase",db:"admin"},
+... {role:"userAdminAnyDatabase", db:"admin"},
+... roles:[
+... pwd:"myappmypass",
+admin> db.createUser({ ... user:"admin",
+switched to db admin
+db.getUser("admin");
+admin.getUsers();
+db.createUser({ user:"admin", pwd:"myappmypass", roles:[ {role:"userAdminAnyDatabase", db:"admin"}, {role:"readWriteAnyDatabase",db:"admin"}, {role:"dbAdminAnyDatabase", db:"admin"} ] });mongosh --port 27017 --authenticationDatabase "admin" -u "admin" -p;
+use admin;
+show dbs;
+show dbs

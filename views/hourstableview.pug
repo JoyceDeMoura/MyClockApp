@@ -1,0 +1,30 @@
+doctype html
+html
+	head
+		meta(charset='UTF-8')
+		title All Users
+		link(rel='stylesheet',href='styles.css')
+	body
+		a(href='../add-hours')
+			button(type='button') Add Hours
+		table
+			thead
+				tr
+					th Register Date
+					th Start Date
+					th Start Hour
+					th End Date
+					th End Hour
+					th User Notes
+					th Edit
+					
+			tbody
+				each item in allHours
+					tr
+						td= item.RegisterDate
+						td= item.StartDate
+						td= item.StartHour
+						td= item.EndDate
+						td= item.EndHour
+						td= item.UserNotes
+						

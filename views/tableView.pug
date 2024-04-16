@@ -1,0 +1,41 @@
+doctype html
+html
+	head
+		meta(charset='UTF-8')
+		title All Users
+		link(rel='stylesheet',href='styles.css')
+	body
+		a(href='../create-user')
+			button(type='button') Create User
+		table
+			thead
+				tr
+					th Last Name
+					th First Name
+					th Date of Birth
+					th Address 1
+					th Address 2
+					th City
+					th Postal Code
+					th Country
+					th Phone
+					th Email
+					th User Notes
+					th Edit
+					
+			tbody
+				each item in allUsers
+					tr
+						td= item.LastName
+						td= item.FirstName
+						td= item.DateOfBirth
+						td= item.Address1
+						td= item.Address2
+						td= item.City
+						td= item.PostalCode
+						td= item.Country
+						td= item.Phone
+						td= item.Email
+						td= item.UserNotes
+						td
+							a(href=`/update-user/${item._id}`) Update

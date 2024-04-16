@@ -1,0 +1,27 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    title  Hours Form
+ 
+  body
+    h1  Hours Form 
+    form(action='/add-hours' method='POST')
+      label(for='IDUser') ID: 
+      input#IDUser(type='text' name='IDUser' )
+      br
+      label(for='DateToday') Today: 
+      input#DateToday(type='text' name='DateToday' readonly)
+      br
+      label(for='StartTime') Start Hour: 
+      input#StartTime(type='text' name='StartTime' )
+      br
+      label(for='EndTime') End Date: 
+      input#EndTime(type='text' name='EndTime' )
+      br
+      label(for='UserNotes') User Notes: 
+      input#UserNotes(type='text' name='UserNotes' )
+      br
+      input(type='submit' value='submit')
+    
+    
